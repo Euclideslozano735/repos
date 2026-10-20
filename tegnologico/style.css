@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Gap Decorations</title>
+  <style>
+    /* Configuración base del diseño */
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    /* Contenedor principal que usa Gap Decorations */
+    .grid-productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      max-width: 1000px;
+      width: 100%;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+      /* 1. Definimos la separación habitual */
+      gap: 32px;
+
+      /* 2. Aplicamos estilos automáticos a los espacios vacíos */
+      rule: 2px dashed #e5e7eb;
+
+      /* 3. Acortamos las líneas un poco en los extremos para un acabado más elegante */
+      rule-inset: 10px;
+    }
+
+    /* Estilos individuales para las tarjetas */
+    .tarjeta {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .tarjeta h3 {
+      margin-top: 0;
+      color: #111827;
+      font-size: 1.25rem;
+    }
+
+    .tarjeta p {
+      color: #6b7280;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .tarjeta .precio {
+      font-weight: bold;
+      color: #3b82f6;
+      font-size: 1.5rem;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="grid-productos">
+    <div class="tarjeta">
+      <h3>Plan Básico</h3>
+      <p>Ideal para proyectos individuales y pequeñas ideas de inicio.</p>
+      <div class="precio">$9/mes</div>
+    </div>
+
+    <div class="tarjeta">
+      <h3>Plan Pro</h3>
+      <p>Perfecto para profesionales y equipos en crecimiento constante.</p>
+      <div class="precio">$29/mes</div>
+    </div>
+
+    <div class="tarjeta">
+      <h3>Plan Enterprise</h3>
+      <p>Soluciones a gran escala con soporte técnico prioritario 24/7.</p>
+      <div class="precio">$99/mes</div>
+    </div>
+  </main>
+
+</body>
+</html>
