@@ -1,0 +1,33 @@
+.red{
+  color: red;
+  background-color: green;
+}
+
+/*div{
+  background-color: blue;
+}*/
+
+.alert-text{
+  color: red;
+}
+
+#title{
+  background-color: red;
+}
+
+.verde, .amarillo{
+  background-color: aqua;
+}
+
+.subsetion.header{
+  background-color: darkgray;
+}
+
+.subsetion.preview{
+  background-color: deeppink;
+}
+
+.ancestor .contents {
+
+  background-color: goldenrod;
+}

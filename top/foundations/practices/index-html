@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practices</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="red">hello world!</div>
+    <div>Hello again!</div>
+    <p>hi---</p>
+    <div>Okay, bye</div>
+    <viv class="alert-text">Please agree to our terms of services</viv>
+    <div id="title">My awesome 90's Page</div>
+
+    <p class="verde">agrupense en filas</p>
+    <p class="amarillo">agrupense en columnas</p>
+
+    <div class="subsetion header">Latest Post</div>
+
+    <div class="subsetion preview">This i where a preview...</div>
+
+    <div class="ancestor">
+      <div class="contents">
+        <div class="contents">Timido</div>
+      </div>
+    </div>
+
+    <div class="contents">Corazon</div>
+  </body>
+</html>
